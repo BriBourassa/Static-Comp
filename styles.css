@@ -6,32 +6,38 @@
 
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: relative; */
+    background: rgb(219, 196, 229);
 }
 
 .left-bar {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 30%;
-    background-color: blueviolet;
-   
+    width: 20%;
+    min-width: 200px;
+    background-color: rgb(155, 99, 208);
+    position: absolute;
+    /* font-size: 2vw; */
 }
 
 .top-title{
     padding: 0;
+    padding-bottom: 80px;
     margin-top: 0;
 }
 
-/* header{
-    position: relative;
-    padding-left: 200px;
+header{
+    margin-left: 200px;
+    width: 80%;
     margin: none;
     border: none;
-    display: flex;
-} */
+    /* padding-left: 200px; */
+    padding-top: 30px;
+    text-align: center;
+}
 
 .bubba-face {
-    display: block;
     object-fit: contain;
     padding: 10px;
     padding-bottom: 20px;
@@ -40,10 +46,13 @@ body{
     height: auto;
 } 
 
-.top-left-title {
+.top-left-title-bubba {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    -webkit-text-stroke-width: 0.03em;
+    /* -webkit-text-stroke-color: rgb(234, 212, 234); */
+    top: 0.3em;
 }
 
 ul {
@@ -51,25 +60,16 @@ ul {
     margin: 30px
 }
 
-/* hr{
-    height: 1px;
-    width: 200px;
-    color: black;
-    text-align: center;
-    overflow: visible;
-} */
-
 hr {
     border: none;
     border-top: 4px double black;
     overflow: visible;
     text-align: center;
     height: 5px;
-    
 }
 
 hr:after {
-    background: blueviolet;
+    background: rgb(155, 99, 208);
     content: '🖤';
     padding: 0 4px;
     position: relative;
@@ -86,10 +86,49 @@ hr:after {
 }
 
 .fa:hover{
-    color:blue
+    color:rgb(69, 13, 142);
+    cursor: pointer;
 }
 
 .list-titles{
     text-align: center;
     padding-bottom: 15px;
+    font-size: larger;
+}
+
+
+.boop-that-snoot{
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-left: 30%; */
+    margin-bottom: 0;
+}
+
+.boop{
+    margin: 10px;
+}
+
+.bubba-goofin{
+    padding-left: 200px;
+    max-width: 50vh;
+
+}
+
+nav{
+    background-color: rgb(219, 196, 229);
+    /* padding-left: 20%; */
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+/* ~~~~ grid attempt 1 */
+
+.grid{
+    display: grid;
+    padding-left: 20%;
+    margin-left: 30%;
+    margin-right: 10%;
+    grid-template-columns: 300px 200px 200px 200px;
+    grid-template-rows: 800px 20px 20px;
+    background-color: aquamarine;
 }
