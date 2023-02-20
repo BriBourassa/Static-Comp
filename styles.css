@@ -13,18 +13,27 @@ body{
 .left-bar {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 150vh;
     width: 20%;
     min-width: 200px;
     background-color: rgb(155, 99, 208);
     position: absolute;
-    /* font-size: 2vw; */
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.main-top{
+    background-color: rgb(187, 131, 187);
 }
 
 .top-title{
+    font-size:50px;
+    font-variant: small-caps;
+    font-stretch: expanded;
     padding: 0;
     padding-bottom: 80px;
     margin-top: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 header{
@@ -102,11 +111,26 @@ hr:after {
     justify-content: space-evenly;
     /* padding-left: 30%; */
     margin-bottom: 0;
+ 
 }
 
 .boop{
     margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: bold;
 }
+
+  .boop:hover { 
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+   
+  }
+ 
+
+
+
 
 .bubba-goofin{
     padding-left: 200px;
@@ -119,16 +143,41 @@ nav{
     /* padding-left: 20%; */
     margin-left: 30%;
     margin-right: 10%;
+    
 }
 
 /* ~~~~ grid attempt 1 */
 
 .grid{
+    
     display: grid;
-    padding-left: 20%;
     margin-left: 30%;
     margin-right: 10%;
-    grid-template-columns: 300px 200px 200px 200px;
-    grid-template-rows: 800px 20px 20px;
+    grid-template-columns: 700px;
+    grid-template-rows: 100px 600px;
     background-color: aquamarine;
+    /* background-image: url("assets/bubbagoof.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; */
+    grid-gap: 1px;
+    border: solid 5px rgb(99, 17, 137);
+    overflow:hidden;
+
 }
+
+
+
+.bubba-goof{
+    object-fit: contain;
+    width: 100%;
+}
+
+/* .break{
+    display: flex;
+    position: relative;
+} */
+
+
+
+
+
