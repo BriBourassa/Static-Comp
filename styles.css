@@ -1,12 +1,10 @@
 *{
-    /* border: solid 1px green; */
     margin: 0px;
     padding: 0px;
 }
 
 body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* position: relative; */
     background: rgb(219, 196, 229);
 }
 
@@ -20,7 +18,6 @@ body{
     position: absolute;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .main-top{
     background-color: rgb(187, 131, 187);
 }
@@ -41,7 +38,6 @@ header{
     width: 80%;
     margin: none;
     border: none;
-    /* padding-left: 200px; */
     padding-top: 30px;
     text-align: center;
 }
@@ -60,7 +56,6 @@ header{
     padding-bottom: 20px;
     padding-top: 20px;
     -webkit-text-stroke-width: 0.03em;
-    /* -webkit-text-stroke-color: rgb(234, 212, 234); */
     top: 0.3em;
 }
 
@@ -105,11 +100,9 @@ hr:after {
     font-size: larger;
 }
 
-
 .boop-that-snoot{
     display: flex;
     justify-content: space-evenly;
-    /* padding-left: 30%; */
     margin-bottom: 0;
  
 }
@@ -121,32 +114,23 @@ hr:after {
     font-weight: bold;
 }
 
-  .boop:hover { 
+.boop:hover { 
     cursor: pointer;
     text-decoration: underline;
     text-decoration-thickness: 3px;
    
-  }
+}
  
-
-
-
-
 .bubba-goofin{
     padding-left: 200px;
     max-width: 50vh;
-
 }
 
 nav{
     background-color: rgb(219, 196, 229);
-    /* padding-left: 20%; */
     margin-left: 30%;
     margin-right: 10%;
-    
 }
-
-/* ~~~~ grid attempt 1 */
 
 .bubba-grid{
     display: grid;
@@ -155,16 +139,13 @@ nav{
     grid-template-columns: auto;
     grid-template-rows: auto; 
     grid-gap: 1px;
-
-    background-color: aquamarine;
     border-top: solid 5px rgb(99, 17, 137);
     border-left: solid 5px rgb(99, 17, 137);
     border-right: solid 5px rgb(99, 17, 137);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     overflow: hidden;
-    
 }
-
-
 
 .grid2{
     display: grid;
@@ -173,39 +154,16 @@ nav{
     grid-template-columns:150px 150px 150px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px;
-    /* grid-template-rows: repeat(5,1fr); */
-    background-color: aquamarine;
     grid-gap: 30px;
     border: solid 5px rgb(99, 17, 137);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     overflow:hidden;
-
 }
-
-
 
 .bubba-goof{
     object-fit: contain;
     width: 100%;
     position: relative;
 }
-
-/* .break{
-    display: flex;
-    position: relative;
-} */
-
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 1 / 1 / 3 / 6; }
-    .div2 { grid-area: 3 / 1 / 5 / 3; }
-    .div3 { grid-area: 3 / 3 / 5 / 5; }
-    .div4 { grid-area: 3 / 5 / 5 / 6; }
-
 
